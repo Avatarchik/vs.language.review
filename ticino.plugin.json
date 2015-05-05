@@ -1,0 +1,18 @@
+{
+	"pluginId": "vs.language.review",
+	"activationEvents": ["textModel:review"],
+	"mainModule": "./reviewMain",
+	"contributes": {
+		"language": [{
+			"id": "review",
+			"extensions": [ ".re" ],
+			"aliases": [ "Re:VIEW", "review" ]
+		}]
+	},
+	"scripts": {
+		"compile": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../gulpfile.js compile --dir vs.language.review"
+	},
+	"_bundling": [
+		{ "name": "./reviewMain" }
+	]
+}
