@@ -92,7 +92,7 @@ define(["require", "exports"], function (require, exports) {
                 [/(^\/\/)([a-z]+)/, ['keyword.review', 'variable.parameter.review']],
 
                 //warn
-                [/\#@[a-z]+\(.*\)/, 'warn-token.review'],
+                [/^\#@[a-z]+\(.*\)/, 'warn-token.review'],
                 
                 //comment
                 [/^\#@\#.*/, 'comment.review'],
