@@ -93,8 +93,9 @@ define(["require", "exports"], function (require, exports) {
 
                 //warn
                 [/\#@[a-z]+\(.*\)/, 'warn-token.review'],
-
-
+                
+                //comment
+                [/^\#@\#.*/, 'comment.review'],
             ],
             list_close: [
                 [/^\/\/\}/, {token: 'keyword.review', bracket: '@close', next: '@pop'}]
